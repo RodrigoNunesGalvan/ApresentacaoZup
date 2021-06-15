@@ -1,0 +1,36 @@
+<mat-toolbar class="header - mat-elevation-z5" color="primary">
+    <span>
+      <a routerLink="/">
+        <img class="logo" src="assets/imagem zup/ZeGotinha.png" alt="logo">
+      </a>
+    </span>
+    <span class="menu">
+        <a routerLink="{{ routeUrl }}">
+          <i class="material-icons">
+           <mat-icon>
+             {{ icon }}
+            </mat-icon>
+          </i>
+        </a>
+    </span>
+  <span class="title">
+    {{ title }}
+  </span>
+  <span class="example-spacer"></span>
+  <span>
+    <a>
+      <i class="material-icons">
+        favorite
+      </i>
+    </a>
+  </span>
+  <span class="example-icon">
+    <a>
+      <i class="material-icons">
+        share
+      </i>
+    </a>
+  </span>
+</mat-toolbar>
+
+

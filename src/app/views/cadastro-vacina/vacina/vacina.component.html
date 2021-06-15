@@ -1,0 +1,33 @@
+<mat-card class="formulario mat-elevation-z6">
+  <mat-card-title> Nova Aplicação </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome da Vacina"
+        [(ngModel)]="vacina.nomeVacina"
+        name="nome"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="E-mail do Paciente"
+        [(ngModel)]="vacina.emailPaciente"
+        name="paciente"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Data da Vacinação"
+        [(ngModel)]="vacina.dataVacina"
+        name="vacina"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createVacina()" color="primary">
+    Salvar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>

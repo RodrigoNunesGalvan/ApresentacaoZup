@@ -1,0 +1,27 @@
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]='vacinas'>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef >Id do Paciente</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="nomeVacina">
+      <th mat-header-cell *matHeaderCellDef >Nome da Vacina</th>
+      <td mat-cell *matCellDef="let row">{{row.nomeVacina}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="emailPaciente">
+      <th mat-header-cell *matHeaderCellDef >Email Paciente</th>
+      <td mat-cell *matCellDef="let row">{{row.emailPaciente}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dataVacina">
+      <th mat-header-cell *matHeaderCellDef >Data da Vacina</th>
+      <td mat-cell *matCellDef="let row">{{row.dataVacina}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

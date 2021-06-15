@@ -1,0 +1,42 @@
+<mat-card class="formulario mat-elevation-z6">
+  <mat-card-title> Novo Paciente </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Nome do Paciente"
+        [(ngModel)]="paciente.nome"
+        name="nome"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="E-mail do Paciente"
+        [(ngModel)]="paciente.email"
+        name="paciente"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Cpf do Paciente"
+        [(ngModel)]="paciente.cpf"
+        name="cpf"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Data de Nascimento"
+        [(ngModel)]="paciente.nascimento"
+        name="nascimento"
+      />
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createPaciente()" color="primary">
+    Salvar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
+

@@ -1,0 +1,14 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.footer {
+  background-color: rgb(7, 35, 64);
+  position: fixed;
+  bottom: 0;
+}
+.textofooter {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 200;
+}
+
