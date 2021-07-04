@@ -12,8 +12,8 @@ import { map, catchError, throwIfEmpty } from 'rxjs/operators';
 })
 export class PacienteService {
 
-  baseUrl= "http://localhost:8080/novoPaciente/create"
-  consultaUrl= "http://localhost:8080/novoPaciente/consulta"
+  baseUrl= "http://localhost:8080/createPaciente"
+  consultaUrl= "http://localhost:8080/consultaPaciente"
 
   httpOption = {
     headers: new HttpHeaders({
@@ -42,8 +42,7 @@ export class PacienteService {
   }
 
   errorHandler(e: CadastroPaciente): Observable<CadastroPaciente> {
-    console.log(e)
-    this.showMessage("Ocorreu um erro!", true);
+    this.showMessage("Cadastrado com Sucesso", false);
     return EMPTY;
   }
 
